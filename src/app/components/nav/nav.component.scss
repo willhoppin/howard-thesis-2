@@ -1,0 +1,57 @@
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.left-bar {
+    width: 45px;
+    padding: 35px 25px 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 510px) {
+        flex-direction: row;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 25px;
+    }
+}
+
+.w-logo {
+    width: 45px;
+    padding-bottom: 65px;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+
+    @media (max-width: 510px) {
+        padding-bottom: 0;
+        width: 40px;
+        padding-bottom: 0;
+        margin-right: 6px;
+        margin-top: 12px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.social-icon {
+    width: 32px;
+    margin: 15px 0;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    height: 100%;
+
+    &:hover {
+        opacity: 50%;
+    }
+
+    @media (max-width: 510px) {
+        margin: 0 6px;
+        margin-top: 12px;
+        width: 28px;
+    }
+}

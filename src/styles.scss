@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    font-family: Nunito Sans;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Benguiat";
+    src: local("Benguiat"), url(./assets/fonts/Benguiat-Bold.ttf) format("truetype");
+}
+
+.swift {
+    background: #F7522A;  
+}
+
+.python {
+    background: #3374A8;
+}
+
+.obj-c {
+    background: black;
+}
+
+.cv {
+    background: #0002F8;
+}
+
+.aws {
+    background: black;
+}
+
+.angular {
+    background: #a6120d;
+}
+
+.node {
+    background: #3c873a;
+}
+
+.fullstack {
+    background: rgb(99, 99, 255);
+}
+
+.vercel {
+    background: black;
+}
+
+.java {
+    background: #5382a1;
+}

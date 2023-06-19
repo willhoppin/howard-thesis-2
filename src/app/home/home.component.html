@@ -1,0 +1,43 @@
+<div class="parent">
+    <app-nav class="nav"></app-nav>
+    <div class="main-right">
+        <div class="section-one">
+            <div class="main-text-wrap">
+                <div class="main-title">Howard Thesis Showcase</div>
+                <div class="main-description">PAYTON WRITE AND SEND ME A SUBTITLE HERE</div>
+            </div>
+            <div class="buttons-wrapper">
+                <a class="link" href="https://youtu.be/8D4cNA7pQUE" target="_blank">
+                    <div class="play-button">
+                        <div class="play"></div>
+                        Play
+                    </div>
+                </a>
+                <a class="link" href="" target="_blank">
+                    <div class="about-wrapper">
+                        <div class="about-text">More Info</div>
+                        <div class="about-button"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-gradient"></div>
+        <div class="section-two">
+            <div class="trending-text">2022 Films</div>
+            <div class="features-wrapper">
+                <div *ngFor="let film of films2022">
+                    <app-faux-feature [image]="film.image" [link]="film.link"></app-faux-feature>
+                </div>
+            </div>
+        </div>
+        <div class="section-x">
+            <div class="trending-text">Sponsors</div>
+            <div class="features-wrapper">
+                <div *ngFor="let sponsor of sponsors">
+                    <app-faux-feature [image]="sponsor.image" [link]="sponsor.link"></app-faux-feature>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
