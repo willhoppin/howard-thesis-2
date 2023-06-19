@@ -103,27 +103,27 @@ export class HomeComponent implements OnInit {
 
   sponsors = [
     {
-      image: '/assets/features/BurnOut.jpeg',
+      image: '/assets/features/1.png',
       link: 'https://www.focusfeatures.com/'
     },
     {
-      image: '/assets/features/BurnOut.jpeg',
+      image: '/assets/features/2.png',
       link: 'https://www.linkedin.com/feed/update/urn:li:activity:7073111262141820928?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7073111262141820928%29'
     },
     {
-      image: '/assets/features/BurnOut.jpeg',
+      image: '/assets/features/3.png',
       link: 'https://hoorae.co/'
     },
     {
-      image: '/assets/features/BurnOut.jpeg',
+      image: '/assets/features/4.png',
       link: 'https://www.instagram.com/howard.thesis.showcase/'
     },
     {
-      image: '/assets/features/BurnOut.jpeg',
+      image: '/assets/features/5.png',
       link: 'https://www.bcpdigital.com/'
     },
     {
-      image: '/assets/features/BurnOut.jpeg',
+      image: '/assets/features/6.png',
       link: 'https://www.instagram.com/patrickorrphotography_/'
     },
   ]
