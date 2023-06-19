@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   films2022 = [
     {
       image: '/assets/features/BurnOut.jpeg',
-      link: 'https://drive.google.com/file/d/1giEcbAh_84XYlSP1kVMV3y_I4E0j8gPt/view?usp=sharing'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/Chosen.JPG',
@@ -18,34 +18,34 @@ export class HomeComponent implements OnInit {
     },
     {
       image: '/assets/features/HER.png',
-      link: 'https://www.youtube.com/watch?v=lHSf9RJlSRM'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/HIT.jpg',
-      link: 'https://vimeo.com/240400929'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/HotPotato.jpeg',
-      link: 'https://vimeo.com/341240445'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
-      image: '/assets/features/ItsComplicated.JPEG',
-      link: 'https://vimeo.com/294267879'
+      image: '/assets/features/ItsComplicated.jpeg',
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/MasterOfNone.png',
-      link: 'https://vimeo.com/294267879'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/NiceToMeetYou.jpeg',
-      link: 'https://vimeo.com/294267879'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
   ]
   
   films2023 = [
     {
       image: '/assets/features/BurnOut.jpeg',
-      link: 'https://drive.google.com/file/d/1giEcbAh_84XYlSP1kVMV3y_I4E0j8gPt/view?usp=sharing'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/Chosen.JPG',
@@ -53,34 +53,34 @@ export class HomeComponent implements OnInit {
     },
     {
       image: '/assets/features/HER.png',
-      link: 'https://www.youtube.com/watch?v=lHSf9RJlSRM'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/HIT.jpg',
-      link: 'https://vimeo.com/240400929'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/HotPotato.jpeg',
-      link: 'https://vimeo.com/341240445'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
-      image: '/assets/features/ItsComplicated.JPEG',
-      link: 'https://vimeo.com/294267879'
+      image: '/assets/features/ItsComplicated.jpeg',
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/MasterOfNone.png',
-      link: 'https://vimeo.com/294267879'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
     {
       image: '/assets/features/NiceToMeetYou.jpeg',
-      link: 'https://vimeo.com/294267879'
+      link: 'https://youtu.be/m3ILEWTkHVg'
     },
   ]
 
   sponsors = [
     {
-      image: '/assets/features/photosite.jpg',
-      link: 'https://willhoppin.wixsite.com/images'
+      image: '/assets/features/BurnOut.jpeg',
+      link: 'https://youtu.be/m3ILEWTkHVg'
     }
   ]
 
