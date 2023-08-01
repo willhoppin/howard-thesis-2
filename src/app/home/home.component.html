@@ -27,6 +27,14 @@
         <div class="section-two">
             <div class="trending-text">2023 Films</div>
             <div class="features-wrapper">
+                <div *ngFor="let feature of films2023_pages">
+                    <app-feature [image]="feature.image" [link]="feature.link"></app-feature>
+                </div>
+            </div>
+        </div>
+        <div class="section-x">
+            <div class="trending-text">2023 Films (covers only)</div>
+            <div class="features-wrapper">
                 <div *ngFor="let film of films2023">
                     <app-faux-feature [image]="film.image" [link]="film.link"></app-faux-feature>
                 </div>

@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
   films2023 = [
     {
       image: '/assets/features/AngelOnMyShoulder.jpeg',
-      link: 'https://youtu.be/bKYt8EiqRY0 '
+      link: 'https://youtu.be/bKYt8EiqRY0'
     },
     {
       image: '/assets/features/Crowned.jpeg',
@@ -99,6 +99,13 @@ export class HomeComponent implements OnInit {
       image: '/assets/features/Looming.jpg',
       link: 'https://youtu.be/CCEgSX2oNvU'
     },
+  ]
+
+  films2023_pages = [
+    {
+      image: '/assets/features/AngelOnMyShoulder.jpeg',
+      link: '/angel'
+    }
   ]
 
   sponsors = [
