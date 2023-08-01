@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CheeseComponent } from './feature-pages/coding/cheese/cheese.component';
+import { AngelComponent } from './feature-pages/coding/angel/angel.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'cheese', component: CheeseComponent },
+  { path: 'angel', component: AngelComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

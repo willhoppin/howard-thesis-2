@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './components/feature/feature.component';
-import { CheeseComponent } from './feature-pages/coding/cheese/cheese.component';
+import { AngelComponent } from './feature-pages/coding/angel/angel.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FauxFeatureComponent } from './faux-feature/faux-feature.component';
@@ -15,7 +15,7 @@ import { FauxFeatureComponent } from './faux-feature/faux-feature.component';
     AppComponent,
     HomeComponent,
     FeatureComponent,
-    CheeseComponent,
+    AngelComponent,
     NavComponent,
     FooterComponent,
     FauxFeatureComponent
