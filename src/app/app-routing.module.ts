@@ -15,6 +15,14 @@ import { KeeperComponent } from './feature-pages/coding/keeper/keeper.component'
 import { LoomingComponent } from './feature-pages/coding/looming/looming.component';
 import { SearchingComponent } from './feature-pages/coding/searching/searching.component';
 import { VhsComponent } from './feature-pages/coding/vhs/vhs.component';
+import { BurnComponent } from './feature-pages/coding/burn/burn.component';
+import { ChosenComponent } from './feature-pages/coding/chosen/chosen.component';
+import { HerComponent } from './feature-pages/coding/her/her.component';
+import { HitComponent } from './feature-pages/coding/hit/hit.component';
+import { PotatoComponent } from './feature-pages/coding/potato/potato.component';
+import { ComplicatedComponent } from './feature-pages/coding/complicated/complicated.component';
+import { MasterComponent } from './feature-pages/coding/master/master.component';
+import { NiceComponent } from './feature-pages/coding/nice/nice.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,6 +40,14 @@ const routes: Routes = [
   { path: 'looming', component: LoomingComponent },
   { path: 'searching', component: SearchingComponent },
   { path: 'vhs', component: VhsComponent },
+  { path: 'burn', component: BurnComponent },
+  { path: 'chosen', component: ChosenComponent },
+  { path: 'her', component: HerComponent },
+  { path: 'hit', component: HitComponent },
+  { path: 'potato', component: PotatoComponent },
+  { path: 'complicated', component: ComplicatedComponent },
+  { path: 'master', component: MasterComponent },
+  { path: 'nice', component: NiceComponent },
 
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
