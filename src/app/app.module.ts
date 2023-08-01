@@ -6,9 +6,22 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './components/feature/feature.component';
 import { AngelComponent } from './feature-pages/coding/angel/angel.component';
+import { AdmirerComponent } from './feature-pages/coding/admirer/admirer.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FauxFeatureComponent } from './faux-feature/faux-feature.component';
+import { CarmenComponent } from './feature-pages/coding/carmen/carmen.component';
+import { CoreComponent } from './feature-pages/coding/core/core.component';
+import { CrownedComponent } from './feature-pages/coding/crowned/crowned.component';
+import { DivineComponent } from './feature-pages/coding/divine/divine.component';
+import { FineComponent } from './feature-pages/coding/fine/fine.component';
+import { IcksComponent } from './feature-pages/coding/icks/icks.component';
+import { InfluenceComponent } from './feature-pages/coding/influence/influence.component';
+import { JonahComponent } from './feature-pages/coding/jonah/jonah.component';
+import { KeeperComponent } from './feature-pages/coding/keeper/keeper.component';
+import { LoomingComponent } from './feature-pages/coding/looming/looming.component';
+import { SearchingComponent } from './feature-pages/coding/searching/searching.component';
+import { VhsComponent } from './feature-pages/coding/vhs/vhs.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +29,22 @@ import { FauxFeatureComponent } from './faux-feature/faux-feature.component';
     HomeComponent,
     FeatureComponent,
     AngelComponent,
+    AdmirerComponent,
     NavComponent,
     FooterComponent,
-    FauxFeatureComponent
+    FauxFeatureComponent,
+    CarmenComponent,
+    CoreComponent,
+    CrownedComponent,
+    DivineComponent,
+    FineComponent,
+    IcksComponent,
+    InfluenceComponent,
+    JonahComponent,
+    KeeperComponent,
+    LoomingComponent,
+    SearchingComponent,
+    VhsComponent
   ],
   imports: [
     BrowserModule,

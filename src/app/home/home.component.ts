@@ -105,6 +105,58 @@ export class HomeComponent implements OnInit {
     {
       image: '/assets/features/AngelOnMyShoulder.jpeg',
       link: '/angel'
+    },
+    {
+      image: '/assets/features/SecretAdmirer.jpeg',
+      link: '/admirer'
+    },
+    {
+      image: '/assets/features/WhatHappenedToCarmenBates.jpeg',
+      link: '/carmen'
+    },
+    {
+      image: '/assets/features/TheCore.jpg',
+      link: '/core'
+    },
+    {
+      image: '/assets/features/Crowned.jpeg',
+      link: '/crowned'
+    },
+    {
+      image: '/assets/features/DivineTiming.jpeg',
+      link: '/divine'
+    },
+    {
+      image: '/assets/features/TotallyFine.jpeg',
+      link: '/fine'
+    },
+    {
+      image: '/assets/features/ICKS.jpeg',
+      link: '/icks'
+    },
+    {
+      image: '/assets/features/OverTheInfluence.jpeg',
+      link: '/influence'
+    },
+    {
+      image: '/assets/features/SincerelyJonah.jpg',
+      link: '/jonah'
+    },
+    {
+      image: '/assets/features/MyBrothersKeeper.png',
+      link: '/keeper'
+    },
+    {
+      image: '/assets/features/Looming.jpg',
+      link: '/looming'
+    },
+    {
+      image: '/assets/features/ASearchingSoul.jpg',
+      link: '/searching'
+    },
+    {
+      image: '/assets/features/VHS.png',
+      link: '/vhs'
     }
   ]
 
