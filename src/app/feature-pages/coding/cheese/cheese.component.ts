@@ -23,10 +23,6 @@ export class CheeseComponent implements OnInit {
     {
       image: '/assets/features/willflix-code.png',
       link: '/willflix'
-    },
-    {
-      image: '/assets/features/catan-code.png',
-      link: '/catan'
     }
   ]
 
