@@ -41,6 +41,14 @@
             </div>
         </div>
         <div class="section-x">
+            <div class="trending-text">DMV Film Friendly Businesses</div>
+            <div class="features-wrapper">
+                <div *ngFor="let business of businesses">
+                    <app-faux-feature [image]="business.image" [link]="business.link"></app-faux-feature>
+                </div>
+            </div>
+        </div>
+        <div class="section-x">
             <div class="trending-text">Sponsors</div>
             <div class="features-wrapper">
                 <div *ngFor="let sponsor of sponsors">

@@ -128,6 +128,29 @@ export class HomeComponent implements OnInit {
     },
   ]
 
+  businesses = [
+    {
+      image: '/assets/features/clyde.png',
+      link: 'https://www.clydes.com/location/gallery-place/?y_source=1_MzcwMzY2OTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D'
+    },
+    {
+      image: '/assets/features/hab.png',
+      link: 'https://www.taqueriahabanero.com/'
+    },
+    {
+      image: '/assets/features/smoke.png',
+      link: 'https://halfsmoke.com/'
+    },
+    {
+      image: '/assets/features/culture.png',
+      link: 'https://www.culturecoffeetoodc.com/'
+    },
+    {
+      image: '/assets/features/butcher.png',
+      link: 'https://georgetownbutcher.com/'
+    },
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
