@@ -11,6 +11,27 @@ html, body {
     src: local("Benguiat"), url(./assets/fonts/Benguiat-Bold.ttf) format("truetype");
 }
 
+.parent {
+    display: flex;
+    background: black !important;
+
+    @media (max-width: 510px) {
+        flex-direction: column;
+    }
+}
+
+.bottom-gradient {
+    height: 100px;
+    width: 100%;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    ) !important;
+    margin-top: -100px;
+}
+
 .swift {
     background: #F7522A;  
 }
