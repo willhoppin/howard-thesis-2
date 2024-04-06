@@ -19,6 +19,7 @@ import { IcksComponent } from './feature-pages/coding/icks/icks.component';
 import { InfluenceComponent } from './feature-pages/coding/influence/influence.component';
 import { JonahComponent } from './feature-pages/coding/jonah/jonah.component';
 import { KeeperComponent } from './feature-pages/coding/keeper/keeper.component';
+import { AboutComponent } from './info-pages/about/about.component';
 import { LoomingComponent } from './feature-pages/coding/looming/looming.component';
 import { SearchingComponent } from './feature-pages/coding/searching/searching.component';
 import { VhsComponent } from './feature-pages/coding/vhs/vhs.component';
@@ -50,6 +51,7 @@ import { NiceComponent } from './feature-pages/coding/nice/nice.component';
     InfluenceComponent,
     JonahComponent,
     KeeperComponent,
+    AboutComponent,
     LoomingComponent,
     SearchingComponent,
     VhsComponent,
