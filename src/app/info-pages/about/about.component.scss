@@ -173,7 +173,21 @@
     @media (max-width: 950px) {
         align-items: center;
         justify-content: center;
-        flex-direction:column-reverse
+        flex-direction: column-reverse;
+    }
+}
+
+.reverse-unit {
+    @media (min-width: 950px) {
+        flex-direction: row-reverse !important;
+    }
+}
+
+.reverse-unit-photo {
+    @media (min-width: 950px) {
+        margin-right: 30px !important;
+        margin-left: 0 !important;
+        margin-bottom: 0;
     }
 }
 
