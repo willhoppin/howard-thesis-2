@@ -9,17 +9,16 @@
 
 .main-right {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-one {
-    padding: 120px 0 175px 135px;
-    background: linear-gradient(
-        to left,
-        rgba(17, 18, 21, 0),
-        rgba(17, 18, 21, 1)
-    ),
-    url('/assets/covers/icks.jpg');
+    padding: 120px 0 175px 30px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
     color: white;
     width: 100%;
@@ -27,12 +26,6 @@
     @media (max-width: 510px) {
         padding: 120px 0 175px 30px;
         margin-top: -95px;
-        background: linear-gradient(
-        to left,
-        rgba(17, 18, 21, 0.4),
-        rgba(17, 18, 21, 1)
-    ),
-    url('/assets/covers/icks.jpg');
     }
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,8 +132,66 @@
     margin-right: 7px;
 }
 
+.text-w-border {
+    border-bottom: 2px dotted white;
+    padding-bottom: 45px;
+    font-size: 16px;
+}
+
 .tag-text {
     white-space: nowrap;
+}
+
+.person-name {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.person-desc {
+    font-size: 16px;
+
+    @media (min-width: 510px) and (max-width: 1350px) {
+        font-size: 14px
+    }
+}
+
+.person-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.person-unit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    border-bottom: 2px dotted white;
+    padding-bottom: 45px;
+    
+    @media (max-width: 950px) {
+        align-items: center;
+        justify-content: center;
+        flex-direction:column-reverse
+    }
+}
+
+.person-photo {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+
+    @media (min-width: 950px) {
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 950px) and (max-width: 1350px) {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .episode-title {
@@ -149,10 +200,20 @@
     font-weight: bold;
 }
 
-.episode-description {
-    margin-top: 15px;
+.about-col {
+    margin-top: -20zpx;
     font-size: 19px;
     opacity: 0.8;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    @media (min-width: 510px) {
+        margin: -100px;
+        width: 55%;
+    }
 }
 
 .play-button {
@@ -216,4 +277,8 @@
     @media (max-width: 510px) {
         position: relative;
     }
+}
+
+.image-bg {
+    width: 80%;
 }
