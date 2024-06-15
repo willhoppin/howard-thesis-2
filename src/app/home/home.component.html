@@ -7,7 +7,7 @@
                 <div class="main-description">HTS is an annual event highlighting the remarkable talent of graduating Howard University film students through their senior short films. Here they are able to not only share their skills to friends, family, but also the greater DC community. Presented by Outta Focus Entertainment.</div>
             </div>
             <div class="buttons-wrapper">
-                <a class="link" href="https://youtu.be/8D4cNA7pQUE" target="_blank">
+                <a class="link" href="https://www.youtube.com/watch?v=GqGNEys0rvs" target="_blank">
                     <div class="play-button">
                         <div class="play"></div>
                         Play Trailer
@@ -23,6 +23,14 @@
         </div>
         <div class="bottom-gradient"></div>
         <div class="section-two">
+            <div class="trending-text">2024 Films</div>
+            <div class="features-wrapper">
+                <div *ngFor="let feature of films2024_pages">
+                    <app-feature [image]="feature.image" [link]="feature.link"></app-feature>
+                </div>
+            </div>
+        </div>
+        <div class="section-x">
             <div class="trending-text">2023 Films</div>
             <div class="features-wrapper">
                 <div *ngFor="let feature of films2023_pages">
@@ -35,6 +43,14 @@
             <div class="features-wrapper">
                 <div *ngFor="let film of films2022">
                     <app-feature [image]="film.image" [link]="film.link"></app-feature>
+                </div>
+            </div>
+        </div>
+        <div class="section-x">
+            <div class="trending-text">Event Recaps</div>
+            <div class="features-wrapper">
+                <div *ngFor="let recap of recaps">
+                    <app-faux-feature [image]="recap.image" [link]="recap.link"></app-faux-feature>
                 </div>
             </div>
         </div>

@@ -101,7 +101,97 @@ export class HomeComponent implements OnInit {
     }
   ]
 
+  films2024_pages = [
+    {
+      image: '/assets/features/running.png',
+      link: '/running'
+    },
+    {
+      image: '/assets/features/butterflies.png',
+      link: '/butterflies'
+    },
+    {
+      image: '/assets/features/shepherd.png',
+      link: '/shepherd'
+    },
+    {
+      image: '/assets/features/hag.png',
+      link: '/hag'
+    },
+    {
+      image: '/assets/features/filmschool.png',
+      link: '/filmschool'
+    },
+    {
+      image: '/assets/features/lovemachine.png',
+      link: '/lovemachine'
+    },
+    {
+      image: '/assets/features/rubber.png',
+      link: '/rubber'
+    },
+    {
+      image: '/assets/features/sanctuary.png',
+      link: '/sanctuary'
+    },
+    {
+      image: '/assets/features/seasons.png',
+      link: '/seasons'
+    },
+    {
+      image: '/assets/features/pageant.png',
+      link: '/pageant'
+    },
+    {
+      image: '/assets/features/bayou.png',
+      link: '/bayou'
+    },
+    {
+      image: '/assets/features/puppet.png',
+      link: '/puppet'
+    },
+    {
+      image: '/assets/features/halffull.png',
+      link: '/halffull'
+    },
+    {
+      image: '/assets/features/ember.jpg',
+      link: '/ember'
+    },
+    {
+      image: '/assets/features/withered.jpg',
+      link: '/withered'
+    },
+    {
+      image: '/assets/features/openflame.jpg',
+      link: '/openflame'
+    },
+    {
+      image: '/assets/features/realfake.png',
+      link: '/realfake'
+    }
+  ]
+
+  recaps = [
+    {
+      image: '/assets/features/recap2024.png',
+      link: '/2024'
+    },
+  ]
+
   sponsors = [
+    {
+      image: '/assets/features/7.png',
+      link: 'https://www.fotokem.com/'
+    },
+    {
+      image: '/assets/features/8.png',
+      link: 'https://shotdeck.com/'
+    },
+    {
+      image: '/assets/features/9.png',
+      link: 'https://www.finaldraft.com/'
+    },
     {
       image: '/assets/features/1.png',
       link: 'https://www.focusfeatures.com/'
