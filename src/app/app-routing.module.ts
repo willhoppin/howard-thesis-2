@@ -25,6 +25,23 @@ import { PotatoComponent } from './feature-pages/coding/potato/potato.component'
 import { ComplicatedComponent } from './feature-pages/coding/complicated/complicated.component';
 import { MasterComponent } from './feature-pages/coding/master/master.component';
 import { NiceComponent } from './feature-pages/coding/nice/nice.component';
+import { RunningComponent } from './feature-pages/coding/running/running.component';
+import { ButterfliesComponent } from './feature-pages/coding/butterflies/butterflies.component';
+import { ShepherdComponent } from './feature-pages/coding/shepherd/shepherd.component';
+import { HagComponent } from './feature-pages/coding/hag/hag.component';
+import { FilmschoolComponent } from './feature-pages/coding/filmschool/filmschool.component';
+import { LovemachineComponent } from './feature-pages/coding/lovemachine/lovemachine.component';
+import { RubberComponent } from './feature-pages/coding/rubber/rubber.component';
+import { SanctuaryComponent } from './feature-pages/coding/sanctuary/sanctuary.component';
+import { SeasonsComponent } from './feature-pages/coding/seasons/seasons.component';
+import { PageantComponent } from './feature-pages/coding/pageant/pageant.component';
+import { BayouComponent } from './feature-pages/coding/bayou/bayou.component';
+import { PuppetComponent } from './feature-pages/coding/puppet/puppet.component';
+import { HalffullComponent } from './feature-pages/coding/halffull/halffull.component';
+import { EmberComponent } from './feature-pages/coding/ember/ember.component';
+import { WitheredComponent } from './feature-pages/coding/withered/withered.component';
+import { OpenflameComponent } from './feature-pages/coding/openflame/openflame.component';
+import { RealfakeComponent } from './feature-pages/coding/realfake/realfake.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -52,7 +69,23 @@ const routes: Routes = [
   { path: 'complicated', component: ComplicatedComponent },
   { path: 'master', component: MasterComponent },
   { path: 'nice', component: NiceComponent },
-
+  { path: 'running', component: RunningComponent },
+  { path: 'butterflies', component: ButterfliesComponent },
+  { path: 'shepherd', component: ShepherdComponent },
+  { path: 'hag', component: HagComponent },
+  { path: 'filmschool', component: FilmschoolComponent },
+  { path: 'lovemachine', component: LovemachineComponent },
+  { path: 'rubber', component: RubberComponent },
+  { path: 'sanctuary', component: SanctuaryComponent },
+  { path: 'seasons', component: SeasonsComponent },
+  { path: 'pageant', component: PageantComponent },
+  { path: 'bayou', component: BayouComponent },
+  { path: 'puppet', component: PuppetComponent },
+  { path: 'halffull', component: HalffullComponent },
+  { path: 'ember', component: EmberComponent },
+  { path: 'withered', component: WitheredComponent },
+  { path: 'openflame', component: OpenflameComponent },
+  { path: 'realfake', component: RealfakeComponent },
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];
