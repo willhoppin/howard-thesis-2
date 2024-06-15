@@ -14,6 +14,7 @@ import { JonahComponent } from './feature-pages/coding/jonah/jonah.component';
 import { KeeperComponent } from './feature-pages/coding/keeper/keeper.component';
 import { LoomingComponent } from './feature-pages/coding/looming/looming.component';
 import { AboutComponent } from './info-pages/about/about.component';
+import { Recap2024Component } from './info-pages/recap2024/recap2024.component';
 import { SearchingComponent } from './feature-pages/coding/searching/searching.component';
 import { VhsComponent } from './feature-pages/coding/vhs/vhs.component';
 import { BurnComponent } from './feature-pages/coding/burn/burn.component';
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'jonah', component: JonahComponent },
   { path: 'keeper', component: KeeperComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'recap2024', component: Recap2024Component },
   { path: 'looming', component: LoomingComponent },
   { path: 'searching', component: SearchingComponent },
   { path: 'vhs', component: VhsComponent },

@@ -175,7 +175,7 @@ export class HomeComponent implements OnInit {
   recaps = [
     {
       image: '/assets/features/recap2024.png',
-      link: '/2024'
+      link: '/recap2024'
     },
   ]
 

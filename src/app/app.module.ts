@@ -20,6 +20,7 @@ import { InfluenceComponent } from './feature-pages/coding/influence/influence.c
 import { JonahComponent } from './feature-pages/coding/jonah/jonah.component';
 import { KeeperComponent } from './feature-pages/coding/keeper/keeper.component';
 import { AboutComponent } from './info-pages/about/about.component';
+import { Recap2024Component } from './info-pages/recap2024/recap2024.component';
 import { LoomingComponent } from './feature-pages/coding/looming/looming.component';
 import { SearchingComponent } from './feature-pages/coding/searching/searching.component';
 import { VhsComponent } from './feature-pages/coding/vhs/vhs.component';
@@ -52,6 +53,7 @@ import { NiceComponent } from './feature-pages/coding/nice/nice.component';
     JonahComponent,
     KeeperComponent,
     AboutComponent,
+    Recap2024Component,
     LoomingComponent,
     SearchingComponent,
     VhsComponent,
