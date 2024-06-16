@@ -1,59 +1,20 @@
 <div class="parent" style="height: 100vh">
     <app-nav class="nav"></app-nav>
     <div class="main-right">
-        <img class="image-bg" src="/assets/social-share/willflix.png"/>
-        <div class="section-one">
-            <div class="about-col">
-                <div class="text-w-border">Founded by Payton Mack, the Howard Thesis Showcase serves as a vessel for emerging black storytellers to be uplifted through premiering their thesis short films to fellow students and the greater DMV community. Once Payton realized there would be no platform to screen thesis films when she was a student in the class, she began to plan what would soon be known as HTS. Since its cultivation in 2022 this annual event has become one of the most sought after events after homecoming and springfest, doubling in attendees and growing behind the scenes. In 2023, Payton partnered with Walter Sanders IV to create Outta Focus Entertainment LLC to ensure that this event would be something future film students could look forward to and become a tradition amongst graduating HBCU filmmakers for years to come.</div>
-                <div class="person-unit">
-                    <div class="person-unit-text">
-                        <div class="person-name">Payton Mack</div>
-                        <div class="person-title">HTS Founder & Executive Producer</div>
-                        <div class="person-desc">Payton Mack is a filmmaker from Houston, TX with her B.A. from Howard University and a current MFA Film Production candidate at the University of Southern California. From a very young age, she has always appreciated capturing the beauty in the small things and has developed her skills before she knew she was interested in storytelling. From working within Hoorae Media assisting the development of stories to creating an ad alongside the Beats by Dre brand and United Masters, Payton takes advantage of every opportunity to expand her perspective on storytelling. Her most recent short film Forsee, surrounding a young woman's natural hair journey following her mother's death, earned its way into the Oscar Qualifying Martha's Vineyard African American Film Festival and was named one of the 2023 Best of the Fest short films.</div>
-                    </div>
-                    <img class="person-photo" src="/assets/people/payton.jpg"/>
-                </div>
-                <div class="person-unit reverse-unit">
-                    <div class="person-unit-text">
-                        <div class="person-name">Walter Sanders IV</div>
-                        <div class="person-title">Head of Operations</div>
-                        <div class="person-desc">Walter Sanders IV, originally raised in Gwinnett County, Georgia, is the Co-Founder of Outta Focus Entertainment. He holds a B.F.A. in Media, Journalism, and Film from Howard University where he started his journey in the entertainment industry with multiple internships at major studios, leading to his participation in the EICOP’s HBCU in LA program 2023 cohort and the T. Howard Foundation Final Talent Pool. Currently based in Atlanta, Georgia, Walter serves as an events and production coordinator for Liquid Soul, a marketing agency. In this role, he spearheads creative campaigns with leading film studios and entertainment companies within the experimental marketing department. With a blend of his passions for storytelling, business, and marketing, Walter aims to foster the growth of emerging talents and organizations by leveraging his expertise and connections to create impactful opportunities and collaborations within the entertainment industry.</div>
-                    </div>
-                    <img class="person-photo reverse-unit-photo" src="/assets/people/walter.jpg"/>
-                </div>
-                <div class="person-unit">
-                    <div class="person-unit-text">
-                        <div class="person-name">Kalisa Lee</div>
-                        <div class="person-title">Production Intern</div>
-                        <div class="person-desc">Kalisa Lee was born in Atlanta, Georgia, and raised in Memphis, Tennessee. She developed a love for storytelling from a young age and started acting in high school. As she matured, her adoration for storytelling changed, and she felt her talents were better suited behind the scenes. She is a Junior Television and Film Major at Howard University. Her dream is to one day own a production company and have a collective that brings together artists from a multitude of mediums.</div>
-                    </div>
-                    <img class="person-photo" src="/assets/people/kalisa.jpg"/>
-                </div>
-                <div class="person-unit reverse-unit">
-                    <div class="person-unit-text">
-                        <div class="person-name">Kayla Cain</div>
-                        <div class="person-title">Production Intern</div>
-                        <div class="person-desc">Kayla Cain is a Junior Film and TV Production major, African Studies minor from Chicago, IL. After graduation she plans to pursue a career as a director and editor, both for scripted projects and live sports production. On set is one of her favorite places to be because she loves watching all of the hard work put in by so many people come together into a finished project. She is interested in working in live sports because as a fairly new basketball fan, it will allow her to combine her love of production with the unmatched exhilaration of sports.</div>
-                    </div>
-                    <img class="person-photo reverse-unit-photo" src="/assets/people/kayla.jpg"/>
-                </div>
-                <div class="person-unit">
-                    <div class="person-unit-text">
-                        <div class="person-name">Jasmine Smith</div>
-                        <div class="person-title">Film Management Intern</div>
-                        <div class="person-desc">Jasmine Smith is a Senior Honors Television & Film Major, Business Administration Minor from Atlanta, Georgia. Throughout her time at Howard, she has been involved with various film productions including producing several senior thesis films. Jasmine hopes to make her mark in the industry as a staff writer and ultimately showrunner for scripted television series.</div>
-                    </div>
-                    <img class="person-photo" src="/assets/people/jasmine.jpg"/>
-                </div>
-                <div class="person-unit reverse-unit">
-                    <div class="person-unit-text">
-                        <div class="person-name">Jessica McLorren</div>
-                        <div class="person-title">Film Management Intern</div>
-                        <div class="person-desc">Jessica Mclorren is a first year MFA Film student born in Dallas, Texas with a B.A. from the University of Texas at Dallas. She is serving as one of our film management interns. In the future, she hopes to be a writer and director in the film industry.</div>
-                    </div>
-                    <img class="person-photo reverse-unit-photo" src="/assets/people/jessica.jpg"/>
-                </div>
-            </div>
+      <div class="section-one">
+        <div class="aligner">
+          <div class="mini-title">2024 Howard Thesis Showcase Recap</div>
+          <div class="image-grid">
+            <img *ngFor="let image of imagePaths" [src]="image.path" alt="Showcase Image" (click)="openModal(image.path)">
+          </div>
         </div>
-    <div class="bottom-gradient"></div>
-</div>
+      </div>
+      <div class="bottom-gradient"></div>
+    </div>
+  
+    <div class="modal" *ngIf="selectedImage" (click)="closeModal()">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img class="modal-content" [src]="selectedImage" style="margin-top: 100px;">
+    </div>
+  </div>
+  
