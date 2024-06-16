@@ -13,6 +13,7 @@ interface ImageData {
 export class Recap2024Component implements OnInit {
   imagePaths: ImageData[] = [];
   selectedImage: string | null = null;
+  loading: boolean = true;
 
   constructor() { }
 
@@ -31,6 +32,7 @@ export class Recap2024Component implements OnInit {
         if (this.imagePaths.length === imageCount) {
           this.imagePaths.sort((a, b) => a.aspectRatio - b.aspectRatio);
           this.imagePaths.reverse(); // Reverse the order after sorting
+          this.loading = false;
         }
       });
     }

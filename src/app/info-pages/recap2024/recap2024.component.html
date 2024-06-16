@@ -4,7 +4,10 @@
       <div class="section-one">
         <div class="aligner">
           <div class="mini-title">2024 Howard Thesis Showcase Recap</div>
-          <div class="image-grid">
+          
+          <div *ngIf="loading" class="loader"></div>
+          
+          <div class="image-grid" *ngIf="!loading">
             <img *ngFor="let image of imagePaths" [src]="image.path" alt="Showcase Image" (click)="openModal(image.path)">
           </div>
         </div>
@@ -17,4 +20,3 @@
       <img class="modal-content" [src]="selectedImage" style="margin-top: 100px;">
     </div>
   </div>
-  
