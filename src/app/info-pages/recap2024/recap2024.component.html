@@ -1,26 +1,25 @@
 <div class="parent" style="height: 100vh">
-    <app-nav class="nav"></app-nav>
-    <div class="main-right">
+  <app-nav class="nav"></app-nav>
+  <div class="main-right">
       <div class="section-one">
-        <div class="aligner">
-          <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/59gygXJE-2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="aligner">
+              <div style="margin-bottom: 10px" class="video-container" [ngClass]="{'loaded': !loading}">
+                  <iframe src="https://www.youtube.com/embed/59gygXJE-2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div>
+                  <div *ngIf="loading" class="loader"></div>
+                  <div class="image-grid" *ngIf="!loading">
+                      <img *ngFor="let image of imagePaths" [src]="image.path" alt="Showcase Image" (click)="openModal(image.path)">
+                  </div>
+              </div>
           </div>
-        
-          <div>
-            <div *ngIf="loading" class="loader"></div>
-          
-            <div class="image-grid" *ngIf="!loading">
-              <img *ngFor="let image of imagePaths" [src]="image.path" alt="Showcase Image" (click)="openModal(image.path)">
-            </div>
-          </div>
-        </div>
       </div>
       <div class="bottom-gradient"></div>
-    </div>
-  
-    <div class="modal" *ngIf="selectedImage" (click)="closeModal()">
+  </div>
+
+  <div class="modal" *ngIf="selectedImage" (click)="closeModal()">
       <span class="close" (click)="closeModal()">&times;</span>
       <img class="modal-content" [src]="selectedImage" style="margin-top: 100px;">
-    </div>
   </div>
+</div>

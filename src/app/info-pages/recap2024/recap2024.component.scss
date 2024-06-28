@@ -16,13 +16,24 @@
 }
 
 .section-one {
-    padding: 120px 0 175px 30px;
+    padding: 120px 75px 175px 75px; /* Initial margin */
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 150px); /* Adjust the width to account for the padding */
+
+    @media (max-width: 1200px) {
+        padding: 120px 50px 175px 50px; /* Decrease margin */
+        width: calc(100% - 100px); /* Adjust the width to account for the padding */
+    }
+
+    @media (max-width: 768px) {
+        padding: 120px 30px 175px 30px; /* Decrease margin further */
+        width: calc(100% - 60px); /* Adjust the width to account for the padding */
+    }
 
     @media (max-width: 510px) {
-        padding: 120px 0 175px 30px;
+        padding: 150px 20px 175px 20px; /* Increase top margin for mobile */
+        width: calc(100% - 40px); /* Adjust the width to account for the padding */
         margin-top: -95px;
     }
 
@@ -35,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .mini-title {
@@ -55,19 +67,49 @@
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // Adjust the minmax value as needed
-    gap: 10px; // Adjust the gap as needed
-    padding: 10px; // Add padding if needed
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduced gap to half */
+    padding: 10px; /* Add padding if needed */
+    width: calc(100% - 150px); /* Initial width to account for the margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin: 0 75px; /* Initial margin on the left and right */
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+        width: calc(100% - 100px); /* Adjust width for decreased margin */
+        margin: 0 50px;
+    }
+
+    @media (max-width: 768px) {
+        width: calc(100% - 60px); /* Adjust width for decreased margin */
+        margin: 0 30px;
+    }
+
+    @media (max-width: 510px) {
+        width: calc(100% - 40px); /* Adjust width for decreased margin */
+        margin: 0 20px;
+    }
 }
   
-img {
-    width: 100%;
+.image-grid img {
+    flex: 1 1 calc(33.33% - 10px); /* Adjust the base size and subtract the gap */
+    max-width: calc(33.33% - 10px); /* Adjust max-width to handle gaps */
     height: auto;
-    object-fit: cover; // Adjusts the image to cover the container without stretching
-    cursor: pointer; // Change cursor to pointer when hovering over images
+    object-fit: cover; /* Adjusts the image to cover the container without stretching */
+    cursor: pointer; /* Change cursor to pointer when hovering over images */
+
+    @media (max-width: 1200px) {
+        flex: 1 1 calc(49%); /* Two columns */
+        max-width: calc(49%);
+    }
+
+    @media (max-width: 768px) {
+        flex: 1 1 calc(100% - 20px); /* One column */
+        max-width: calc(100% - 20px);
+    }
 }
-  
+
 .modal {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -142,10 +184,32 @@ img {
 }
 
 .video-container {
-    width: 100%;
+    width: calc(100% - 150px); /* Initial width to account for the margin */
     height: 100%;
     position: relative;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 0 75px; /* Initial margin on the left and right */
+    display: none; /* Hide the video container initially */
+
+    @media (max-width: 1200px) {
+        width: calc(100% - 100px); /* Adjust width for decreased margin */
+        margin: 0 50px;
+    }
+
+    @media (max-width: 768px) {
+        width: calc(100% - 60px); /* Adjust width for decreased margin */
+        margin: 0 30px;
+    }
+
+    @media (max-width: 510px) {
+        width: calc(100% - 40px); /* Adjust width for decreased margin */
+        margin: 0 20px; /* Add margin on top for mobile */
+        margin-top: 30px;
+    }
+}
+
+.video-container.loaded {
+    display: block; /* Show the video container when loading is done */
 }
 
 .video-container iframe {
