@@ -155,7 +155,7 @@ export class HomeComponent implements OnInit {
       link: '/halffull'
     },
     {
-      image: '/assets/features/ember.jpg',
+      image: '/assets/features/ember.png',
       link: '/ember'
     },
     {
