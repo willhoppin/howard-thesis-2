@@ -26,15 +26,17 @@ export class Recap2024Component implements OnInit {
     const imageCount = 257; // Total number of images
 
     for (let i = 1; i <= imageCount; i++) {
-      const imagePath = `${folderPath}${i}.jpg`;
-      this.calculateAspectRatio(imagePath).then(aspectRatio => {
-        this.imagePaths.push({ path: imagePath, aspectRatio });
-        if (this.imagePaths.length === imageCount) {
-          this.imagePaths.sort((a, b) => a.aspectRatio - b.aspectRatio);
-          this.imagePaths.reverse(); // Reverse the order after sorting
-          this.loading = false;
-        }
-      });
+      if (i !== 94 && i !== 237) { // Exclude images 94 and 237
+        const imagePath = `${folderPath}${i}.jpg`;
+        this.calculateAspectRatio(imagePath).then(aspectRatio => {
+          this.imagePaths.push({ path: imagePath, aspectRatio });
+          if (this.imagePaths.length === imageCount - 2) { // Adjust the length check
+            this.imagePaths.sort((a, b) => a.aspectRatio - b.aspectRatio);
+            this.imagePaths.reverse(); // Reverse the order after sorting
+            this.loading = false;
+          }
+        });
+      }
     }
   }
 
