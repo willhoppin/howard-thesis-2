@@ -166,10 +166,12 @@ export class HomeComponent implements OnInit {
       image: '/assets/features/openflame.jpg',
       link: '/openflame'
     },
+    /* hiding this because director can't be reached
     {
       image: '/assets/features/realfake.png',
       link: '/realfake'
     }
+    */
   ]
 
   recaps = [
